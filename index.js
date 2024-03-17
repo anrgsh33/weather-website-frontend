@@ -2,7 +2,7 @@ const btn = document.getElementById("btn");
 const input = document.getElementById("cityInput");
 
 function fetchData(cityName) {
-  const url = `http://localhost:5000/api/?cityname=${cityName}`;
+  const url = `https://weather-website-backend-61ar.onrender.com/api/?cityname=${cityName}`;
 
   fetch(url)
     .then((response) => {
